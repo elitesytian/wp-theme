@@ -28,28 +28,28 @@ function _wp_theme_settings( $wp_customize ){
 
 	// CUSTOM JAVASCRIPT
 	$wp_customize->add_section( 'custom_js_section' , array(
-	    'title' => __( 'Additional Javascript', 'mytheme' )
+		'title' => __( 'Additional Javascript', 'mytheme' )
 	) );
 	$wp_customize->add_setting( 'custom_js' , array(
-        'default'    => '',
-        'capability' => 'edit_theme_options'
-    ) );
-    $wp_customize->add_control( 'custom_js', array(
-    	'label'       => '',
-    	'type'        => 'textarea',
-    	'section'     => 'custom_js_section',
-    	'description' => 'Insert your custom javascript codes here.'
-    ) );
+		'default'    => '',
+		'capability' => 'edit_theme_options'
+	) );
+	$wp_customize->add_control( 'custom_js', array(
+		'label'       => '',
+		'type'        => 'textarea',
+		'section'     => 'custom_js_section',
+		'description' => 'Insert your custom javascript codes here.'
+	) );
 
 	// ARCHIVE SETTINGS
 	$wp_customize->add_section( 'archive_settings_section' , array(
-	    'title' => 'Archive & Category Options'
+		'title' => 'Archive & Category Options'
 	) );
 	$wp_customize->add_setting( 'archive_settings' , array(
-        'default'    => '',
-        'capability' => 'edit_theme_options'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'archive_settings', array(
+		'default'    => '',
+		'capability' => 'edit_theme_options'
+	) );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'archive_settings', array(
 		'label'       => 'Background Image',
 		'section'     => 'archive_settings_section', // site identity section
 		'settings'    => 'archive_settings',
