@@ -9,14 +9,15 @@ $( document ).ready(function() {
 // LOAD
 $( window ).on( "load", function() {
 	loaderToggle();
+	adjustTopOffset();
 });
 
 // RESIZE
 $(window).resize(function() {
-
+	adjustTopOffset();
 });
 
 // ORIENTATION CHANGE
 $(window).on('orientationchange', function() {
-
+	adjustTopOffset();
 });
