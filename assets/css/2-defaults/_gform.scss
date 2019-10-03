@@ -109,6 +109,9 @@
 	}
 	.gform_footer {
 		position: relative;
+		.gform_button {
+			@include transition(0.2s);
+		}
 	}
 	.validation_error {
 		background-color: #fff;
