@@ -30,6 +30,17 @@ function customizer_default_options($wp_customize) {
 		'section'     => 'custom_default_settings_section'
 	) );
 
+	// Footer Copyright Text
+	$wp_customize->add_setting( 'copyright_text' , array(
+		'default'    => '',
+		'capability' => 'edit_theme_options'
+	) );
+	$wp_customize->add_control( 'copyright_text', array(
+		'label'       => 'Copyright Text',
+		'type'        => 'text',
+		'section'     => 'custom_footer_settings_section'
+	) );
+
 	// Loader Toggle
 	$wp_customize->add_setting( 'loader_toggle' , array(
 		'default'    => '',
