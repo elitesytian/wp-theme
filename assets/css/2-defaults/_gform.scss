@@ -1,0 +1,126 @@
+.gform_wrapper {
+	.gform_body {
+		.gform_fields {
+			list-style: none;
+			padding: 0;
+			.gfield {
+				position: relative;
+				&:before {
+					display: none;
+				}
+				input,
+				select,
+				textarea {
+					appearance:none;
+					box-shadow:none;
+					width: 100%;
+					border: 1px solid #acacac;
+				}
+				select::-ms-expand {
+					display:none;
+				}
+				.ginput_container {
+					position: relative;
+				}
+				.validation_message {
+					
+				}
+				&.gform_hidden {
+					display: none;
+				}
+			}
+			.gform_validation_container {
+				display: none;
+			}
+		}
+		.ginput_container_select {
+			display: block;
+			select {
+				position:relative;
+				z-index: 2;
+			}
+			&:after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 0;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 6px solid #989898;
+				position: absolute;
+				z-index: 2;
+				pointer-events: none;
+				cursor: pointer;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 15px;
+			}
+		}
+		.gfield_radio,
+		.gfield_checkbox {
+			list-style-type: none;
+			padding:0;
+			li {
+				position:relative;
+				input {
+					display: none;
+					&:checked + label {
+						&:before{
+							content: '\f058';
+						}
+					}
+				}
+				label {
+					margin-bottom: 5px;
+					&:before {
+						font-family: 'Font Awesome 5 Pro';
+						content: '\f111';
+						font-weight: 300;
+						margin-right: 10px;
+						width: auto;
+						right: 15px;
+						opacity: 1;
+						background: transparent;
+					}
+				}
+				&:last-child {
+					label{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.gfield_checkbox {
+			li{
+				input{
+					&:checked + label {
+						&:before{
+							content: '\f14a';
+						}
+					}
+				}
+				label{
+					&:before{
+						content: '\f0c8';
+					}
+				}
+			}
+		}
+	}
+	.gform_footer {
+		position: relative;
+	}
+	.validation_error {
+		background-color: #fff;
+		border: 1px solid red;
+		color: red;
+		display: none;
+	}
+
+	.validation_message {
+		background-color: #fff;
+		border: 1px solid red;
+		color: red;
+		z-index: 2;
+	}
+}
