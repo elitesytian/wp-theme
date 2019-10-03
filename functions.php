@@ -14,6 +14,7 @@ locate_template( "functions/customizer-sections/google.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/social.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/modals.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/sliders.php", TRUE, TRUE );
+locate_template( "functions/customizer-sections/banner.php", TRUE, TRUE );
 
 // CUSTOM FUNCTIONS
 locate_template( "functions/helpers.php", TRUE, TRUE );
