@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
 // LOAD
 $( window ).on( "load", function() {
-
+	loaderToggle();
 });
 
 // RESIZE
