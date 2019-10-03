@@ -30,7 +30,7 @@ function customizer_default_options($wp_customize) {
 		'section'     => 'custom_default_settings_section'
 	) );
 
-	// Footer Copyright Text
+	// Copyright Text
 	$wp_customize->add_setting( 'copyright_text' , array(
 		'default'    => '',
 		'capability' => 'edit_theme_options'
