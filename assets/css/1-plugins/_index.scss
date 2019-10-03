@@ -7,9 +7,17 @@
 @import "bootstrap-4.0.0/images";
 @import "bootstrap-4.0.0/grid";
 
+@import "bootstrap-4.0.0/mixins/image";
+
+@import "bootstrap-4.0.0/utilities/display";
+@import "bootstrap-4.0.0/utilities/flex";
+
 /* Fontawesome Pro 5.5.0 */
 @import 'fontawesome-pro-5.5.0/brands';
 @import 'fontawesome-pro-5.5.0/light';
 @import 'fontawesome-pro-5.5.0/regular';
 @import 'fontawesome-pro-5.5.0/solid';
 @import 'fontawesome-pro-5.5.0/fontawesome';
+
+// Hamburgers
+@import 'hamburgers/hamburgers';

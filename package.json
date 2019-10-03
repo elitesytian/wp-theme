@@ -20,5 +20,8 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-pxtorem": "^3.0.0"
   }
 }
