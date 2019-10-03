@@ -16,7 +16,7 @@ locate_template( "functions/customizer-sections/modals.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/sliders.php", TRUE, TRUE );
 
 // CUSTOM FUNCTIONS
-locate_template( "functions/custom-functions.php", TRUE, TRUE );
+locate_template( "functions/helpers.php", TRUE, TRUE );
 
 // FUNCTION OVERWRITES 
 locate_template( "functions/overwrites.php", TRUE, TRUE );
