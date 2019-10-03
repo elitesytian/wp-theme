@@ -67,6 +67,11 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
+	<?php
+		$site_logo  = get_theme_mod('site_logo');
+		$site_title = get_bloginfo('name');
+		$site_url   = get_site_url();
+	?>
 	<!-- SITE HEADER -->
 	<header id="header">
 		<div class="container">
