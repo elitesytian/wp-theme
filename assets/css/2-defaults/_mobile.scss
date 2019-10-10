@@ -59,6 +59,7 @@ aside {
 					padding: 0;
 					list-style: none;
 					li {
+						// SECOND LEVEL LINK
 						a {
 							padding: 10px 15px 10px 30px;
 						}
@@ -67,6 +68,7 @@ aside {
 						}
 						&.current-menu-item,
 						&.current-menu-ancestor {
+							// SECOND LEVEL LINK
 							> a {
 								color: blue;
 							}
@@ -75,9 +77,11 @@ aside {
 							.sub-menu {
 								li {
 									a {
+										// THIRD LEVEL LINK
 										padding: 10px 15px 10px 45px;
 									}
 									&.current-menu-item {
+										// THIRD LEVEL LINK
 										> a {
 											color: blue;
 										}
@@ -133,5 +137,23 @@ header {
 	.hamburger {
 		display: inline-flex;
 		padding-right: 0;
+		.hamburger-box {
+			width: 25px;
+			.hamburger-inner {
+				width: 100%;
+				border-radius: 0;
+				background-color: #fff;
+				&:before {
+					width: 100%;
+					border-radius: 0;
+					background-color: #fff;
+				}
+				&:after {
+					width: 100%;
+					border-radius: 0;
+					background-color: #fff;
+				}
+			}
+		}
 	}
 }
