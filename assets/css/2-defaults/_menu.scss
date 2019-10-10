@@ -1,0 +1,151 @@
+// BAREBONES MENU STYLING
+.menu {
+	ul.menu {
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		list-style: none;
+		li {
+			a {
+				// DEFAULT LINK COLOR
+				color: #000;
+			}
+		}
+		> li {
+			display: inline-block;
+			position: relative;
+			font-size: 16px;
+			> a {
+				// FIRST LEVEL LINK
+				display: block;
+				vertical-align: middle;
+				display: inline-block;
+				padding: 10px 10px;
+				line-height: 1;
+				@media (min-width: 1600px) {
+					padding: 10px 15px;
+				}
+				&:hover {
+					color: blue;
+				}
+			}
+			.sub-menu {
+				display: none;
+			}
+			&.current-menu-item,
+			&.current-menu-ancestor {
+				// FIRST LEVEL LINK
+				> a {
+					color: blue;
+				}
+			}
+			&.menu-item-has-children {
+				// FIRST LEVEL LINK
+				&:hover {
+					> a {
+						color: blue;
+					}
+				}
+				> a {
+					&:after {
+						vertical-align: middle;
+						padding-left: 6px;
+						content: "\f078";
+						font-family: "Font Awesome 5 Pro";
+						font-weight: 400;
+					}
+				}
+				&:hover {
+					> a {
+						&:after {
+							content: "\f077";
+						}
+					}
+				}
+			}
+			&:hover {
+				> .sub-menu {
+					background-color: #fff;
+					min-width: 150px;
+					list-style: none;
+					display: block;
+					position: absolute;
+					top: 100%;
+					padding: 0;
+					> li {
+						position: relative;
+						> a {
+							// SECOND LEVEL LINK
+							display: block;
+							padding: 10px 30px 10px 15px;
+							&:hover {
+								color: blue;
+							}
+						}
+						&.current-menu-item,
+						&.current-menu-ancestor {
+							// SECOND LEVEL LINK
+							> a {
+								color: blue;
+							}
+						}
+						&.menu-item-has-children {
+							// SECOND LEVEL LINK
+							&:hover {
+								> a {
+									color: blue;
+								}
+							}
+							> a {
+								&:after {
+									content: "\f054";
+									font-family: "Font Awesome 5 Pro";
+									font-weight: 400;
+									position: absolute;
+									top: 50%;
+									transform: translateY(-50%);
+									right: 10px;
+								}
+							}
+							&:hover {
+								> a {
+									&:after {
+										content: "\f053";
+									}
+								}
+							}
+						}
+						&:hover {
+							> .sub-menu {
+								min-width: 150px;
+								list-style: none;
+								display: block;
+								position: absolute;
+								top: 0;
+								left: 100%;
+								padding: 0;
+								> li {
+									position: relative;
+									> a {
+										// THIRD LEVEL LINK
+										display: block;
+										padding: 10px 30px 10px 15px;
+										&:hover {
+											color: blue;
+										}
+									}
+									&.current-menu-item {
+										// THIRD LEVEL LINK
+										a {
+											color: blue;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
