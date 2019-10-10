@@ -1,0 +1,137 @@
+aside {
+	&#mobile-menu {
+		position: fixed;
+		@media (min-width: 992px) {
+			display: none;
+		}
+		transition: all 0.5s;
+		&.is-active {
+			left: 0;
+		}
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	ul.menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background-color: #fff;
+		li {
+			a {
+				// DEFAULT LINK COLOR
+				color: #000;
+			}
+		}
+		li {
+			position: relative;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			a {
+				padding: 10px 15px;
+				display: block;
+				&:hover {
+					// FIRST LEVEL LINK
+					color: blue;
+				}
+			}
+			.sub-menu {
+				display: none;
+			}
+			&.current-menu-item,
+			&.current-menu-ancestor {
+				// FIRST LEVEL LINK
+				> a {
+					color: blue;
+				}
+			}
+			&.menu-item-has-children {
+				// FIRST LEVEL LINK
+				&:hover {
+					> a {
+						color: blue;
+					}
+				}
+				.sub-menu {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					li {
+						a {
+							padding: 10px 15px 10px 30px;
+						}
+						.sub-menu {
+							display: none;
+						}
+						&.current-menu-item,
+						&.current-menu-ancestor {
+							> a {
+								color: blue;
+							}
+						}
+						&.menu-item-has-children {
+							.sub-menu {
+								li {
+									a {
+										padding: 10px 15px 10px 45px;
+									}
+									&.current-menu-item {
+										> a {
+											color: blue;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.toggle-menu {
+		cursor: pointer;
+		&.close,
+		&.open {
+			font-size: 14px;
+			&:after {
+				// background-color: rgba(0, 0, 0, 0.2);
+				color: #000;
+				content: "\f067";
+				display: inline-block;
+				font-size: inherit;
+				height: 40px;
+				line-height: 40px;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				text-rendering: auto;
+				top: 0;
+				width: 40px;
+				z-index: 9;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				font-family: "Font Awesome 5 Pro";
+				font-weight: 900;
+			}
+		}
+		&.close {
+			&:after {
+				content: "\f068";
+			}
+		}
+		&.open {
+			&:after {
+				content: "\f067";
+			}
+		}
+	}
+}
+
+header {
+	.hamburger {
+		display: inline-flex;
+		padding-right: 0;
+	}
+}
