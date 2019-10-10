@@ -1,18 +1,14 @@
 @media screen{
-	/*html & body*/
-	html, body{
+	html, body {
 		height: 100%;
 	}
-	body{
+	body {
 		display: flex;
 		flex-direction: column;
 	}
 
-	/*header*/
-	header{
+	header {
 		position: fixed;
-		background-color: #444;
-		color: white;
 		width: 100%;
 		left: 0;
 		right: 0;
@@ -27,19 +23,16 @@
 		height: 100%;
 		width: 100%;
 		max-width: 350px;
-		background-color: #444;
 		overflow: auto;
 		z-index: 11;
 	}
 
-	/*main-wrapper*/
-	#main-wrapper{
+	main {
 		flex: 1 0 auto;
 		position: relative;
 	}
 
-	/*footer*/
-	footer{
+	footer {
 		flex-shrink: 0;
 	}
 }
