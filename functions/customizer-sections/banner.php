@@ -5,7 +5,8 @@ add_action( 'customize_register', 'customizer_banner_options' );
 function customizer_banner_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_banner_settings_section' , array(
-		'title' => __( 'Banner', 'mytheme' )
+		'title' => __( 'Banner', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Default Banner Image

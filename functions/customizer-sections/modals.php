@@ -5,7 +5,8 @@ add_action( 'customize_register', 'customizer_modal_options' );
 function customizer_modal_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_modal_settings_section' , array(
-		'title' => __( 'Modals', 'mytheme' )
+		'title' => __( 'Modals', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Default Modal Toggle

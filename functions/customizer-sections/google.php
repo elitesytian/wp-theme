@@ -5,7 +5,8 @@ add_action( 'customize_register', 'customizer_google_options' );
 function customizer_google_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_google_settings_section' , array(
-		'title' => __( 'Google', 'mytheme' )
+		'title' => __( 'Google', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Google Analytics

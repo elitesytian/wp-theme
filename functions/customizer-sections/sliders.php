@@ -5,7 +5,8 @@ add_action( 'customize_register', 'customizer_slider_options' );
 function customizer_slider_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_slider_settings_section' , array(
-		'title' => __( 'Sliders', 'mytheme' )
+		'title' => __( 'Sliders', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Default Slider Autoplay

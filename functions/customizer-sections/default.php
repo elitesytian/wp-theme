@@ -5,7 +5,8 @@ add_action('customize_register', 'customizer_default_options');
 function customizer_default_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_default_settings_section' , array(
-		'title' => __( 'Defaults', 'mytheme' )
+		'title' => __( 'Defaults', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Default Contact Number

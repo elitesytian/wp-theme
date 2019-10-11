@@ -5,7 +5,8 @@ add_action( 'customize_register', 'customizer_social_options' );
 function customizer_social_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_social_settings_section' , array(
-		'title' => __( 'Social', 'mytheme' )
+		'title' => __( 'Social', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Social Toggle

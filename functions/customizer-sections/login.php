@@ -5,7 +5,8 @@ add_action( 'customize_register', 'customizer_login_options' );
 function customizer_login_options($wp_customize) {
 	// SECTION
 	$wp_customize->add_section( 'custom_login_settings_section' , array(
-		'title' => __( 'Login', 'mytheme' )
+		'title' => __( 'Login', 'mytheme' ),
+		'panel' => 'theme_options_panel',
 	) );
 
 	// Background Color
