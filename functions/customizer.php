@@ -14,6 +14,7 @@ function custom_theme_options_panel($wp_customize) {
 
 // Sections
 locate_template( "functions/customizer-sections/default.php", TRUE, TRUE );
+locate_template( "functions/customizer-sections/colors.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/banner.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/sliders.php", TRUE, TRUE );
 locate_template( "functions/customizer-sections/login.php", TRUE, TRUE );
