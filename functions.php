@@ -11,6 +11,9 @@ locate_template( "functions/customizer.php", TRUE, TRUE );
 // CUSTOM FUNCTIONS
 locate_template( "functions/helpers.php", TRUE, TRUE );
 
+// CUSTOM SHORTCODES
+locate_template( "functions/shortcodes.php", TRUE, TRUE );
+
 // FUNCTION OVERWRITES 
 locate_template( "functions/overwrites.php", TRUE, TRUE );
 
